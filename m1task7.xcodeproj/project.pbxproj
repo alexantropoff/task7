@@ -13,6 +13,7 @@
 		D67834FD29C8A612000BD3CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67834FB29C8A612000BD3CA /* Main.storyboard */; };
 		D67834FF29C8A615000BD3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67834FE29C8A615000BD3CA /* Assets.xcassets */; };
 		D678350229C8A615000BD3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D678350029C8A615000BD3CA /* LaunchScreen.storyboard */; };
+		D678350A29C8A66C000BD3CA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = D678350929C8A66C000BD3CA /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D67834FE29C8A615000BD3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D678350129C8A615000BD3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D678350329C8A615000BD3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D678350929C8A66C000BD3CA /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = Assets.xcassets/image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D67834F929C8A612000BD3CA /* ViewController.swift */,
 				D67834FB29C8A612000BD3CA /* Main.storyboard */,
 				D67834FE29C8A615000BD3CA /* Assets.xcassets */,
+				D678350929C8A66C000BD3CA /* image.png */,
 				D678350029C8A615000BD3CA /* LaunchScreen.storyboard */,
 				D678350329C8A615000BD3CA /* Info.plist */,
 			);
@@ -128,6 +131,7 @@
 				D678350229C8A615000BD3CA /* LaunchScreen.storyboard in Resources */,
 				D67834FF29C8A615000BD3CA /* Assets.xcassets in Resources */,
 				D67834FD29C8A612000BD3CA /* Main.storyboard in Resources */,
+				D678350A29C8A66C000BD3CA /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
