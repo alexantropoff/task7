@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
+    
     private let imageView = UIImageView()
     private let scrollView = UIScrollView()
-
+    
     private let imageHeight: CGFloat = 270
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initScroll()
@@ -27,7 +27,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width: view.bounds.width, height: view.bounds.height + imageHeight)
         view.addSubview(scrollView)
     }
-
+    
     private func initImage() {
         imageView.image = UIImage(named: "image.png")
         imageView.contentMode = .scaleAspectFill
@@ -37,15 +37,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
-        print(scrollView.contentOffset)
-        let topInset=max(imageHeight-offsetY-view.safeAreaInsets.top,imageHeight)
-        print(topInset)
-        scrollView.verticalScrollIndicatorInsets=UIEdgeInsets(top: topInset, left: 0, bottom: 0, right: 0)
         if offsetY < 0 {
             imageView.frame = CGRect(x: offsetY/2, y: 0, width: view.bounds.width - offsetY, height: imageHeight - offsetY)
         } else {
             imageView.frame = CGRect(x: 0, y: -offsetY, width: view.bounds.width, height: imageHeight)
         }
-            print(imageView.frame)
+        scrollView.verticalScrollIndicatorInsets=UIEdgeInsets(top:imageView.frame.height-view.safeAreaInsets.top, left: 0, bottom: 0, right: 0)
     }
 }
